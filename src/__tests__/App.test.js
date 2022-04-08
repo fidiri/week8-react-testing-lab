@@ -113,21 +113,19 @@ test('check box click causes button toggle disabled and color', () => {
   });
 
 });
+//test7
 test('button has text of another button', () => {
   render(<App />); 
-  // most elements have a built in aria role
-  // https://www.w3.org/TR/wai-aria/#role_definitions
-  // note: we have two buttons so we have to be more specific and check for name
+ 
   const button = screen.getByRole('button', { name: 'another button' });
   expect(button).toBeInTheDocument();
 });
+//test8
 test('div has className of white-div', () => {
   render(<App />); 
-  // finding the button element:
-  // https://testing-library.com/docs/queries/byrole/
+ 
   const div = screen.getByText(/this div is white$/i);
-  // asserting the div has className of blue-div':
-  // https://github.com/testing-library/jest-dom#tohaveclass
+  
   expect(div).toHaveClass('white-div');
 });
 
