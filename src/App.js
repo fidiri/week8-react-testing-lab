@@ -13,10 +13,15 @@ function App() {
       <button>this is a button</button><br/>
 
       <button>another button</button><br/>
+      <button>new button</button><br/>
+
 
       <div className="blue-div" 
            style={{color: 'red', height: '50px',width: '150px', padding: '15px'}}>
            this div is blue</div>
+           <div className="white-div" 
+           style={{color: 'green', height: '50px',width: '150px', padding: '15px'}}>
+           this div is white</div>
 
       <button style={{backgroundColor: disabled ? 'gray' : buttonColor}} 
               disabled={disabled}
@@ -34,4 +39,6 @@ function App() {
   );
 }
 
+
 export default App;
+
